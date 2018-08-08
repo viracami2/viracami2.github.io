@@ -4,6 +4,11 @@
 
 }
 
+.tamMediano{
+font-size: 25px;
+
+}
+
 .colorWhite{
   color:whitesmoke;
 }
@@ -18,6 +23,13 @@ color:red;
   text-align: center;  
 }
 
+.fondoBlanco{
+  background-color: ivory;
+}
+
+.alinearCentro{
+  text-align: center;
+}
 .alinearDerecha{
 text-align: end;
 }
@@ -69,8 +81,8 @@ height: 120px;
 -webkit-filter: grayscale(70%);
 
 background-repeat: no-repeat;
-background-position: 50%;
-border-radius: 50%;
+background-position: 70%;
+border-radius: 70%;
 background-size: 100% auto;
 
   }
