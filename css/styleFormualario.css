@@ -1,0 +1,46 @@
+/* variables en css */
+:root{
+  --variableColor:rgb(64, 72, 78);
+
+}
+
+.letraRojo{
+color:red;
+}
+.centrarTexto{
+  text-align: center;  
+}
+
+
+
+  body {
+    /* ese azul sera el oficial para la pagina(por ahora) */    
+    background:var(--variableColor) ;
+
+    margin-left  :50px;
+    margin-right :50px;
+  } 
+
+.menuPrincipa:hover{
+    
+    color :chartreuse;
+}
+
+
+li > ul{
+
+  display: none;
+}
+
+
+.items:hover ul {
+display: block; 
+
+}
+
+
+  img{
+width: 300px;
+height: 250px;
+
+  }
