@@ -1,12 +1,12 @@
 /* variables en css */
 :root{
   --variableColor:rgb(64, 72, 78);
+  --variableColorBlanco: ivory;
 
 }
 
 .tamMediano{
 font-size: 25px;
-
 }
 
 .colorWhite{
@@ -20,7 +20,7 @@ font-size: 25px;
 color:red;
 }
 .centrarTexto{
-  text-align: center;  
+  text-align: center;
 }
 
 .fondoBlanco{
@@ -31,46 +31,61 @@ color:red;
   text-align: center;
 }
 .alinearDerecha{
-text-align: end;
+  margin-right: 30px;
+  text-align: end;
 }
 
-.alinearIzquierda{
-align-self: center;
+.flex{
+  display: flex;
+  justify-content: flex-end;
+
+  }
+
+
+header{
+margin-right: 30px;
+background-image: url("/images/back_white.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
+-webkit-background-origin: content-box
 }
 
-p{
-display: block;
+body {
+  background: black;  
+  width: 95%;
+  /* background-image: url("/images/back_white.jpg"); */
 
-}
-
-
-
-  body {
-    /* ese azul sera el oficial para la pagina(por ahora) */    
-    background:var(--variableColor) ;
-
-    background-image: url("/images/back_white.jpg");
-    
-    background-size: 100%;
+    /* ese azul sera el oficial para la pagina(por ahora) */
+    /* background:var(--variableColorBlanco) ; */
+    /*
 
     margin-left  :50px;
-    margin-right :50px;
-  } 
+    margin-right :50px; */
+    margin-left  :55px;
+  }
 
 .menuPrincipa:hover{
-    
+
     color :chartreuse;
 }
 
-
+li{
+  width: 100%;
+}
 li > ul{
 
-  display: none;
+display:unset;
+background: black;
+color:var(--variableColorBlanco);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 22px;
+
+  /* display: none; */
 }
 
-
 .items:hover ul {
-display: block; 
+display: block;
 
 }
 
@@ -78,17 +93,77 @@ display: block;
   img{
 width: 100px;
 height: 120px;
--webkit-filter: grayscale(70%);
+-webkit-filter: grayscale(50%);
 
 background-repeat: no-repeat;
-background-position: 70%;
-border-radius: 70%;
+background-position: 50%;
+border-radius: 40%;
 background-size: 100% auto;
 
   }
 
-.subirTexto{
-  padding: 0 25px 10px 5px;
-  vertical-align: 30px
-    
+  tamanoEstandar {
+    font-size: 1.5em;
+    margin: 0.67em 0;
   }
+
+
+
+.subirTexto{
+
+  padding: 0 35px 0px 5px;
+  font-size: 18px;
+  text-decoration: none;
+  }
+
+  .skilles{
+    padding-top:  0px;
+  }
+
+ul a:hover {
+  text-decoration: underline;
+
+  }
+
+
+
+
+
+
+  
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+	background: #606061;

@@ -16,15 +16,18 @@
       <link href='images/favicon.png' rel='shortcut icon' type='image/x-icon'>
     </head>
     
-    <nav>      
+    <header>
+
+
+    <!-- <nav class="menuPrincipal alinearDerecha">       -->
+        <nav class="flex">                 
       <ul>
-      </ul>
-      
-      <ul  class="menuPrincipal alinearDerecha">
         <a class="colorWhite subirTexto" href="#skills">Skills</a>
-        <a class="colorWhite subirTexto" href="./contacto/contacto.html">Contacto</a>       
+        <!-- <a class="colorWhite subirTexto" href="./contacto/contacto.html">Contacto</a>        -->
+        <a class="colorWhite subirTexto" href="#openModal"">Contacto</a>       
+        
       </ul>    
-      <img  class="" src="https://avatars0.githubusercontent.com/u/21117290?v=3&u=de29f80bec565db516f41996001407a763409df1&s=400">
+      <img  class="alinearIzquierda" src="https://avatars0.githubusercontent.com/u/21117290?v=3&u=de29f80bec565db516f41996001407a763409df1&s=400">
         
         <!-- <li class="items" >Consultas
           <ul>
@@ -37,37 +40,68 @@
           </ul>
         </li>         -->
     </nav>
+
+     
+     <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Mi modal</h2>
+        <p>Este es un ejemplo de modal, c.</p>
+        <p>Puedes hacer un montón de cosa</p>
+      </div>
+    </div>
+
+    <div>
+
+        <h1 class="centrarTexto colorWhite">Victor Castro</h1>
+        <!-- <p class="centrarTexto colorWhite  tamanoEstandar">BackEnd</p> -->
+        <h3 class="alinearDerecha colorWhite  tamanoEstandar">Dispuestos al futuro(SITIO EN CONSTRUCCION)</h3>
+        
+        <p class="negrita alinearDerecha   tamanoEstandar"> <mark> Ingeniero de Sistemas , amante </mark>al desarrollo de software desde siempre
+          con propositos alcanzables!</p>
     
-    <h1 class="centrarTexto colorWhite">Victor Castro</h1>
-    <h3 class="alinearDerecha ">Dispuestos al futuro(SITIO EN CONSTRUCCION)</h3>
+          <div id ="skills"  >
+          <li class="">
+            <ul>C#</ul>
+            <ul>Nunit</ul>
+            <ul>TDD</ul>
+            <ul>XML</ul>
+            <ul>XSLT</ul>
+            <ul>API</ul>
+            <ul>WS</ul>
+            <ul>Visual-Studio</ul>
+            <ul>Fast-Report</ul>
+            <ul>SQL-SERVER</ul>
+          </li>
+        </div>      
+          
+
+    </div>
     
-    <body>
-      <!--      
-        <p>
-          para saber cual es el valor de la Especificidad de cada uno de los atributos :
-          Especificidad 
+  </header>
+  <body>
+      
+    <!--      
+      <p>
+        para saber cual es el valor de la Especificidad de cada uno de los atributos :
+        Especificidad 
         tags =1
         clases =10
         id=100
         inline=1000
       </p> -->
-
+      
       
       <div class="principal">
-
-                <p class="colorWhite negrita alinearDerecha"> Ingeniero de Sistemas , amante al desarrollo de software desde siempre
-                       con propositos alcanzables!</p>
-                        
-<!--                         
-  <figure>        
-      <a title="Los Tejos" target="_blank" href="https://www.youtube.com.co/viracami3">
+     
+          <!--                         
+            <figure>        
+              <a title="Los Tejos" target="_blank" href="https://www.youtube.com.co/viracami3">
       <img src="https://lh5.ggpht.com/jZ8XCjpCQWWZ5GLhbjRAufsw3JXePHUJVfEvMH3D055ghq0dyiSP3YxfSc_czPhtCLSO=w300" >
       </a>
       <p>Visitalo</p>
   </figure> -->
 
-
- 
   <!-- <p>
 
       <span>Elemenos de linea</span> <span>jeje</span>
@@ -83,33 +117,20 @@
       <time>4:00</time>
       <mark>marcado</mark>
     </p> -->
-    
-    <div id ="skills" class="alinearDerecha">
- <p>Skills</p>
-    <ol>
-      
-        <ol>
-            <li>c#</li>
-            <li>Nunit</li>
-            <li>SQL Server</li>
-            <li>TDD</li>
-            <li>Fast-Report</li>
 
-        </ol>
-      
-  </ol>
-
+    <div>
+     
     </div>
+
   </div>
 </body>
 
 <footer>
-                  <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                </ul>
+      <!-- <ul>
+       <li><a class="g3" href="#!">Link 1</a></li>                  
+      </ul> -->
             
-            <div class="alinearCentro fondoBlanco tamMediano">© 2018 Copyright -Rodeate de personas que te inspiren hacer mejor el hierro se afila con HIERRO!.</div>
+      <div class="alinearCentro colorWhite tamMediano">© Agosto-2018  -Rodeate de personas que te inspiren hacer mejor el hierro se afila con HIERRO!.</div>
         </footer>
 
         </html>
